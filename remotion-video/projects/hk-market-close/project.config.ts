@@ -1,0 +1,93 @@
+import type {VideoProjectConfig} from "../project-config.types";
+
+const config: VideoProjectConfig = {
+  id: "hk-market-close",
+  brand: {
+    colors: {
+      background: "#020A18",
+      surface: "#061426",
+      text: "#F7FAFF",
+      textMuted: "#93A7BF",
+      accent: "#27C8FF",
+      success: "#2AD873",
+      warning: "#F7B84B",
+      error: "#FF4D57",
+    },
+    fonts: {
+      heading: {family: "System Chinese", file: "fonts/system.woff2", weight: 700},
+      body: {family: "System Chinese", file: "fonts/system.woff2", weight: 400},
+      fallback: "Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    },
+    logo: {preferred: "logos/none.svg", minimumWidthPx: 0, clearSpacePx: 0},
+    style: {
+      description: "Midnight-blue Hong Kong financial HUD with cyan framing",
+      borderRadiusPx: 22,
+      shadow: "0 0 32px rgba(39,200,255,0.16)",
+      transitionFrames: 16,
+    },
+  },
+  layout: {safeAreaPercent: {top: 3, right: 3, bottom: 3, left: 3}},
+  audio: {
+    integratedLufs: -14,
+    truePeakDbtp: -1,
+    musicUnderVoiceDb: -18,
+    defaultFadeFrames: 0,
+  },
+  exportProfiles: {
+    fullVertical: {width:1080,height:1920,fps:30,codec:"h264",container:"mp4",pixelFormat:"yuv420p",audioCodec:"aac",output:"out/hk-market-close-full-vertical.mp4"},
+    wrapUpVertical: {width:1080,height:1920,fps:30,codec:"h264",container:"mp4",pixelFormat:"yuv420p",audioCodec:"aac",output:"out/hk-market-close-wrap-up-vertical-v001.mp4"},
+    southboundVertical: {width:1080,height:1920,fps:30,codec:"h264",container:"mp4",pixelFormat:"yuv420p",audioCodec:"aac",output:"out/hk-market-close-southbound-vertical-v001.mp4"},
+    stocksFocusVertical: {
+      width: 1080,
+      height: 1920,
+      fps: 30,
+      codec: "h264",
+      container: "mp4",
+      pixelFormat: "yuv420p",
+      audioCodec: "aac",
+      output: "out/hk-market-close-stocks-focus-vertical-v002.mp4",
+    },
+    sectorVertical: {
+      width: 1080,
+      height: 1920,
+      fps: 30,
+      codec: "h264",
+      container: "mp4",
+      pixelFormat: "yuv420p",
+      audioCodec: "aac",
+      output: "out/hk-market-close-sector-vertical-v001.mp4",
+    },
+    breadthVertical: {
+      width: 1080,
+      height: 1920,
+      fps: 30,
+      codec: "h264",
+      container: "mp4",
+      pixelFormat: "yuv420p",
+      audioCodec: "aac",
+      output: "out/hk-market-close-breadth-vertical-v001.mp4",
+    },
+    snapshotVertical: {
+      width: 1080,
+      height: 1920,
+      fps: 30,
+      codec: "h264",
+      container: "mp4",
+      pixelFormat: "yuv420p",
+      audioCodec: "aac",
+      output: "out/hk-market-close-snapshot-vertical-v001.mp4",
+    },
+    vertical: {
+      width: 1080,
+      height: 1920,
+      fps: 30,
+      codec: "h264",
+      container: "mp4",
+      pixelFormat: "yuv420p",
+      audioCodec: "aac",
+      output: "out/hk-market-close-global-vertical-v005.mp4",
+    },
+  },
+};
+
+export default config;

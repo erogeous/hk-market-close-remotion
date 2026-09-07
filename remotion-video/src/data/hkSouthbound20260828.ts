@@ -1,0 +1,2 @@
+export const hkSouthbound20260828={tradeDate:"2026/09/07",weekday:"星期一",total:914.40,net:12.75,share:43.61,shanghai:3.29,shenzhen:9.46,active:[
+{code:"01810.HK",name:"小米集团-W",net:13.84,turnover:0,change:-3.31},{code:"03087.HK",name:"中际旭创",net:3.67,turnover:0,change:19.58},{code:"02628.HK",name:"中国人寿",net:2.30,turnover:0,change:-1.94},{code:"01888.HK",name:"建滔积层板",net:-6.51,turnover:0,change:-1.68},{code:"01347.HK",name:"华虹宏力",net:-5.83,turnover:0,change:4.90}],} as const;
